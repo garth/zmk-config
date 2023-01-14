@@ -4,17 +4,17 @@
 if SHIELD_BEAMER_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Beamer"
+  default "Beamer"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
+  default y
 
 endif
 
 if SHIELD_BEAMER_LEFT || SHIELD_BEAMER_RIGHT
 
 config ZMK_SPLIT
-	default y
+  default y
 
 #config ZMK_DISPLAY
 #	select LVGL_FONT_MONTSERRAT_26

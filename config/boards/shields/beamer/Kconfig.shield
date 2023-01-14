@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_BEAMER_LEFT
-	def_bool $(shields_list_contains,beamer_left)
+  def_bool $(shields_list_contains,beamer_left)
 
 config SHIELD_BEAMER_RIGHT
-	def_bool $(shields_list_contains,beamer_right)
+  def_bool $(shields_list_contains,beamer_right)
