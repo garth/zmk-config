@@ -3,10 +3,11 @@ id: beamer
 name: Beamer
 type: shield
 url: https://github.com/garth/ergogen/tree/beamer
-requires: [pro_micro]
+requires: [pro_micro, nice_view_header]
 exposes: [i2c_oled]
 features:
   - keys
+  - display
 siblings:
   - beamer_left
   - beamer_right
