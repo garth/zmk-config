@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_FLIPPER_LEFT
+if SHIELD_BEAMER_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "Beamer"
@@ -11,7 +11,7 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
-if SHIELD_FLIPPER_LEFT || SHIELD_FLIPPER_RIGHT
+if SHIELD_BEAMER_LEFT || SHIELD_BEAMER_RIGHT
 
 config ZMK_SPLIT
 	default y
