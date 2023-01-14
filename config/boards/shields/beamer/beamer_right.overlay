@@ -23,3 +23,7 @@
     , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
     ;
 };
+
+&default_transform {
+	col-offset = <5>;
+};
