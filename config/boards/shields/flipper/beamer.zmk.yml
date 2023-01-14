@@ -1,0 +1,12 @@
+file_format: "1"
+id: beamer
+name: Beamer
+type: shield
+url: https://github.com/garth/ergogen/tree/beamer
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - beamer_left
+  - beamer_right
