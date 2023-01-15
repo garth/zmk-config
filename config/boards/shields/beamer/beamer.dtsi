@@ -6,20 +6,6 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-/*
-&nice_view_spi {
-  status = "okay";
-  nice_view: ls0xx@0 {
-    compatible = "sharp,ls0xx";
-    label = "DISPLAY";
-    spi-max-frequency = <1000000>;
-    reg = <0>;
-    width = <160>;
-    height = <68>;
-  };
-};
-*/
-
 / {
 
   chosen {
@@ -47,7 +33,7 @@
 
   kscan0: kscan_composite {
     compatible = "zmk,kscan-composite";
-    label = "KSCAN0";
+    label = "KSCAN";
     columns = <10>;
     rows = <4>;
 
@@ -66,10 +52,10 @@
     label = "FINGERS";
     diode-direction = "col2row";
     row-gpios
-    = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-    , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-    , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-    ;
+      = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+      , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+      , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+      ;
   };
 
   kscan2: kscan_direct {
