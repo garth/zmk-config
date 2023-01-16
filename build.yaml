@@ -14,6 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: beamer_left
+    shield: beamer_left nice_view
   - board: nice_nano_v2
-    shield: beamer_right
+    shield: beamer_right nice_view
